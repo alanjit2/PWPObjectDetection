@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
             masked_img = mask_img(img)
 
-            edge_img = process_img_for_lines(img)
+            edge_img = process_img_for_lines(masked_img)
             edge_img = draw_center(edge_img, img)
 
             lines = detect_lines(edge_img)
