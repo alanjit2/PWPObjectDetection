@@ -7,7 +7,6 @@ def find_contours(processed_img):
     contours, hierarchy = cv.findContours(processed_img,
                                           cv.RETR_EXTERNAL,
                                           cv.CHAIN_APPROX_NONE)
-    print(f"contours: {contours}")
     return contours
 
 
