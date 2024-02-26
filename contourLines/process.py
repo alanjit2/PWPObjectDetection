@@ -15,12 +15,9 @@ def process_img_for_contours(img):
 def mask_img(img):  # create a mask
     # Code from https://www.tutorialspoint.com/how-to-mask-an-image-in-opencv-python Example 2
     # Region to mask
-    # (Home)
-    height_1, height_2 = 100, 400
-    width_1, width_2 = 200, 500
     # SCHOOL
-    # height_1, height_2 = 200, 850
-    # width_1, width_2 = 450, 1250
+    height_1, height_2 = 200, 850
+    width_1, width_2 = 450, 1250
 
     # Set Whole image as black
     mask = np.zeros(img.shape[:2], np.uint8)
