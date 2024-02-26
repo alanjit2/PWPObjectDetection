@@ -20,10 +20,10 @@ def draw_contours(img, contours):
                                      thickness=5)
 
     if len(contours) >= 2:  # Checks if 2 or more contours exist
-        dimensions = min(len(contours[0]), len(contours[-1]))
+        shorter_contour_len = min(len(contours[0]), len(contours[-1]))
 
         midline = []
-        for x in range(dimensions):
+        for x in range(shorter_contour_len):
             # Finds average
             average_of_x = (contours[0][x][0][0] + contours[-1][x][0][0]) // 2
             average_of_y = (contours[0][x][0][1] + contours[-1][x][0][1]) // 2
